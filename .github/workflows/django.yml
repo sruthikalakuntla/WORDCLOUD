@@ -26,4 +26,11 @@ jobs:
         python -m pip install --upgrade pip
     - name: Run Tests
       run: |
+        pip install wordcloud
+        pip install fileupload
+        pip install ipywidgets
+        jupyter nbextension install --py --user fileupload
+        jupyter nbextension enable --py fileupload
+        pip install speechRecognition
+        pip install PyAudio
         python WORDCLOUD.py test
