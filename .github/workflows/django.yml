@@ -34,4 +34,4 @@ jobs:
         pip install speechRecognition
         pip install PyAudio
         pip install portaudio
-        python WORDCLOUD.py test
+      
