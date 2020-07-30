@@ -27,12 +27,6 @@ jobs:
         TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
         TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
       run: |
-        pip install wordcloud
-        pip install fileupload
-        pip install ipywidgets
-        jupyter nbextension install --py --user fileupload
-        jupyter nbextension enable --py fileupload
-        pip install speechRecognition
-        pip install PyAudio
-        python WORDCLOUD.py sdist bdist_wheel
+      
+        python setup.py sdist bdist_wheel
         twine upload dist/*
