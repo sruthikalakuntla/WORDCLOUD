@@ -33,4 +33,5 @@ jobs:
         jupyter nbextension enable --py fileupload
         pip install speechRecognition
         pip install PyAudio
+        pip install portaudio
         python WORDCLOUD.py test
