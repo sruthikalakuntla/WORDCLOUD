@@ -32,4 +32,11 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
+        pip install wordcloud
+        pip install wordcloud
+        pip install fileupload
+        pip install ipywidgets
+        jupyter nbextension install --py --user fileupload
+        jupyter nbextension enable --py fileupload
+        pip install speechRecognition        
         pytest WORDCLOUD.py
