@@ -12,6 +12,7 @@ import wordcloud
 from matplotlib import pyplot as plt
 import tkinter as tk
 import PIL
+import sys
 from PIL import Image
 from PIL import ImageTk
 import fileupload
@@ -173,3 +174,6 @@ e=Text(root, width=51, height=15, borderwidth=5)
 e.pack(padx=10,pady=10)
 
 root.mainloop()
+
+
+sys.exit(0)
