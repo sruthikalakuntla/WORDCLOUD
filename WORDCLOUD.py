@@ -1,3 +1,13 @@
+!pip install wordcloud
+!pip install fileupload
+!pip install ipywidgets
+!jupyter nbextension install --py --user fileupload
+!jupyter nbextension enable --py fileupload
+!pip install speechRecognition
+!pip install PyAudio
+
+
+
 import wordcloud
 from matplotlib import pyplot as plt
 import tkinter as tk
