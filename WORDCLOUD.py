@@ -21,6 +21,7 @@ from tkinter import *
 from tkinter.messagebox import *
 from tkinter.filedialog import *
 import speech_recognition as sr
+import portaudio
 
 
 
